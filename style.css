@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: capitalize;
+}
+body {
+  background-color: rgb(14, 62, 194);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  position: relative;
+}
+header {
+  width: 100%;
+  height: 60px;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 999;
+  position: sticky;
+  top: 0;
+}
+li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:  url(./pepsi-logo-hd-4256.png) no-repeat center;
+  background-size: contain;
+  width: 5%;
+  height: 100%;
+  transition: 1s;
+}
+.logo:hover {
+  transform: rotate(360deg);
+}
+header [type="search"] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  height: 40px;
+  border-radius: 20px;
+  padding-left: 20px;
+  outline: none;
+  color: #fff;
+  transition: 3s;
+  background:  url(./pepsi-logo-hd-4256.png) no-repeat -50px;
+  background-size: contain;
+}
+[type="search"]:hover {
+  background-color: #0e3ec2;
+  background-image: url(./pepsi-logo-hd-4256.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+}
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  width: 90px;
+  height: 40px;
+  transition: 0.5s;
+}
+li:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.137);
+}
+.contact {
+  border-radius: 10px;
+}
+.contact:hover {
+  background-color: rgb(14, 62, 194);
+}
+main {
+
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: column wrap;
+}
+section {
+  width: 89%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.First {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 40%;
+  height: 70%;
+}
+.First h2 {
+  text-transform: uppercase;
+  font-size: 40px;
+  width: 90%;
+}
+.First p {
+  width: 350px;
+  transition: 0.5s;
+}
+button {
+  border-radius: 50px;
+  width: 200px;
+  height: 40px;
+  font: 14px bold;
+  text-transform: uppercase;
+  border: transparent;
+  cursor: pointer;
+}
+.Second {
+  background: url(./pepsigold.png) no-repeat center;
+  background-size: contain;
+  width: 150px;
+  height: 70%;
+}
+.Third {
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.Third div {
+  transition: 0.5s;
+}
+.Third div:hover {
+  margin-top: -15px;
+}
+.Third .one {
+  background: url(./pepsigold.png) no-repeat center;
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+}
+.Third .two {
+  background: url(./pepsibalck.png) no-repeat center;
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+}
+.Third .three {
+  background: url(./pepsidiet.png) no-repeat center;
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+}
+.right-page {
+  width: 30px;
+  height: 30px;
+  background-color: rgb(54, 53, 53);
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  bottom: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 1s;
+}
+.right-page:hover {
+  background-color: rgba(214, 205, 205, 0.5);
+}
